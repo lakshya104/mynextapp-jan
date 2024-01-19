@@ -26,7 +26,8 @@ const Slick = () => {
   };
 
   return (
-    <div className="w-[100%] mb-12  h-[50vh] md:h-[80vh] z-0 relative">
+   <div className= "max-h-[80vh]">
+     <div className="w-[100%] mb-12  h-[50vh] md:h-[80vh] z-0 relative">
       <button
         className="rotate-180 absolute z-50 top-[25%] px-1 md:px-4 py-16 md:py-32 md:opacity-0 opacity-40 transition bg-slate-300 md:hover:bg-slate-300 md:hover:opacity-80"
         onClick={sliderRef?.slickPrev}
@@ -44,7 +45,7 @@ const Slick = () => {
       <Slider ref={(slider) => setSliderRef(slider)} {...settings}>
         <div className="bg-black">
           <Image
-            className="aspect-[12/5] object-contain"
+            className="object-fill h-[50vh] md:h-[80vh] w-full"
             src={wallpaper}
             priority={true}
             alt="Wallpaper"
@@ -52,21 +53,21 @@ const Slick = () => {
         </div>
         <div className="bg-black">
           <Image
-            className="aspect-[12/5] object-contain"
+            className="object-fill h-[50vh] md:h-[80vh] w-full"
             src={wallpaper2}
             alt="Wallpaper"
           />
         </div>
         <div className="bg-black">
           <Image
-            className="aspect-[12/5] object-contain"
+            className="object-fill h-[50vh] md:h-[80vh] w-full"
             src={wallpaper3}
             alt="Wallpaper"
           />
         </div>
         <div className="bg-black">
           <Image
-            className="aspect-[12/5]"
+            className="object-fill h-[50vh] md:h-[80vh] w-full"
             src={wallpaper4}
             alt="Wallpaper"
           />
@@ -87,6 +88,7 @@ const Slick = () => {
         </svg>
       </button>
     </div>
+   </div>
   );
 };
 

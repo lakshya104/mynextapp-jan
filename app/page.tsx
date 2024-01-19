@@ -1,12 +1,15 @@
+import CardData from "./components/CardData";
 import Slick from "./components/Slick";
-import SwiperScroll from "./components/SwiperScroll"
+
 
 
 export default function Home() {
+ 
+
   return (
     <>
-    <Slick/>
-    <SwiperScroll />
+      <Slick />
+      <CardData />
     </>
-  )
+  );
 }
