@@ -26,7 +26,7 @@ const Slick = () => {
   };
 
   return (
-    <div className="w-[100%]  h-[50vh] md:h-[80vh] z-0 relative">
+    <div className="w-[100%] mb-12  h-[50vh] md:h-[80vh] z-0 relative">
       <button
         className="rotate-180 absolute z-50 top-[25%] px-1 md:px-4 py-16 md:py-32 md:opacity-0 opacity-40 transition bg-slate-300 md:hover:bg-slate-300 md:hover:opacity-80"
         onClick={sliderRef?.slickPrev}
